@@ -1,28 +1,5 @@
-server:
-  port: 3344
-spring:
-  application:
-    name: cloud-provider-payment
-  datasource:
-#     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-#     druid:
-    url: jdbc:mysql://localhost:3306/test??allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: root
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com/Good920201/springcloud-config.git
-          search-paths:
-            - springcloud-config
-      label: master
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka7001:7001/eureka/
+name: cloud-provider-payment
+ 
 
   
 
